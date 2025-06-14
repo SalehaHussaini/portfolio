@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saleha's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hi, I'm Saleha!</h1>
+        <button id="theme-toggle">Toggle Dark/Light Mode</button>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a web designer and developer who loves creative design and problem-solving. Here are a few fun facts about me:</p>
+        <ul>
+            <li>I love learning new technologies.</li>
+            <li>I enjoy traveling and exploring new cultures.</li>
+            <li>I'm passionate about graphic design and digital art.</li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>Projects</h2>
+        <div class="grid-container">
+            <div class="project-card">
+                <img src="./first.png" alt="Project 1">
+                <h3>Afghan Cultural Cites</h3>
+                <p>This project was about famous cities of Afghanistan and their famous quotes and parts.</p>
+            </div>
+            <div class="project-card">
+                <img src="./second.png" alt="Project 2">
+                <h3>Movie Theater</h3>
+                <p>This project was about movie theater,that I choosed a very good background and a good movie for it.</p>
+            </div>
+            <div class="project-card">
+                <img src="./third.png" alt="Project 3">
+                <h3>Online shope</h3>
+                <p>This project was about an online shope cite.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Saleha. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const themeToggleButton = document.getElementById('theme-toggle');
+        themeToggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>

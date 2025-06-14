@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light mode background */
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background: #add8e6; /* Soft blue */
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff69b4; /* Soft pink */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #add8e6; /* Soft blue */
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #add8e6;
+    border-radius: 5px;
+}
+
+button {
+    background: #add8e6; /* Soft blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff69b4; /* Soft pink */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #add8e6; /* Soft blue */
+    color: #333;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f8ff; /* Light text */
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background: #333; /* Dark header/footer */
+    color: #f0f8ff;
+}
+
+body.dark-mode .project-card {
+    background: #444; /* Dark project card */
+    color: #f0f8ff;
+}
+
+body.dark-mode section {
+    background: #2a2a2a; /* Dark section background */
+    color: #f0f8ff; /* Light section text */
+}
+
+body.dark-mode nav a {
+    color: #f0f8ff; /* Light link color */
+}
+
+body.dark-mode nav a:hover {
+    color: #ff69b4; /* Soft pink */
+}
